@@ -1,0 +1,775 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0C2D9E00F57CD4109781DD833FE719E4 /* Pods-JKOCLibrary_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A0AB41D4FE43B6F26CF41C90C64AE4E9 /* Pods-JKOCLibrary_Tests-dummy.m */; };
+		2F95748F31F4B301A915E4789175C7F1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		470CCF2F5D4E0CFC5A946B9D53692B3F /* Pods-JKOCLibrary_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F55C72A36D46177474809E412C3E8112 /* Pods-JKOCLibrary_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		623BEA2D123D9ABA2D38EFAD83B501B4 /* Pods-JKOCLibrary_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B5411E971DDFA1C0BF8B00475120492E /* Pods-JKOCLibrary_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		876AA0F2276C5CF0ECADC3DED6B728A1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		B3F99FAF60F7FC228B35A85F503490B7 /* Pods-JKOCLibrary_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D1FF011FE8DE23EA2ECD39A9F05C0EB /* Pods-JKOCLibrary_Example-dummy.m */; };
+		C01B6F4ABCE75E4CD1BB1BA2F07E1995 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		C69F8A584917C192D2F8475BE8B43283 /* ReplaceMe.m in Sources */ = {isa = PBXBuildFile; fileRef = 334A1BD266A969F6F238D911A7B91F4C /* ReplaceMe.m */; };
+		C8C1A4576D939126AE9D470F4758A824 /* JKOCLibrary-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6284902D425829FDC8A6647B91AE8F28 /* JKOCLibrary-dummy.m */; };
+		ECFA46457DA2D66F7092398C6809FBC2 /* JKOCLibrary-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C5C2D1AE3D0566231DE2A6D55BB188A7 /* JKOCLibrary-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1AF5EAF6EDB8889D6827185C9FE91312 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8943F3A611F54ADB0A43BF9E39D68BFC;
+			remoteInfo = JKOCLibrary;
+		};
+		8D6B00C2D958B37C81F331F043122F7A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 556C2957B1B9E81ACF36827564884942;
+			remoteInfo = "Pods-JKOCLibrary_Example";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		088602658A82D6802CD0EE98B01D45AE /* Pods-JKOCLibrary_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-JKOCLibrary_Example-frameworks.sh"; sourceTree = "<group>"; };
+		17A591333CE5EF08214B056918DAC182 /* JKOCLibrary-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JKOCLibrary-prefix.pch"; sourceTree = "<group>"; };
+		261FCD21511DB347379CEA8B240DC77E /* JKOCLibrary.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = JKOCLibrary.modulemap; sourceTree = "<group>"; };
+		273F94865831A5D28672513744E21F36 /* Pods-JKOCLibrary_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-JKOCLibrary_Tests.modulemap"; sourceTree = "<group>"; };
+		334A1BD266A969F6F238D911A7B91F4C /* ReplaceMe.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ReplaceMe.m; path = JKOCLibrary/Classes/ReplaceMe.m; sourceTree = "<group>"; };
+		39EEE654C93FE351D1AA28F13C8F508F /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		5BBD9CC8C6B5560FDB5C789AC6693838 /* Pods-JKOCLibrary_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-JKOCLibrary_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		603A22E47DC7D03CF2CB0189B248232F /* Pods-JKOCLibrary_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-JKOCLibrary_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		6284902D425829FDC8A6647B91AE8F28 /* JKOCLibrary-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "JKOCLibrary-dummy.m"; sourceTree = "<group>"; };
+		65FD36E498C7A5C9592C40CF8F1F7335 /* JKOCLibrary-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "JKOCLibrary-Info.plist"; sourceTree = "<group>"; };
+		6D1FF011FE8DE23EA2ECD39A9F05C0EB /* Pods-JKOCLibrary_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-JKOCLibrary_Example-dummy.m"; sourceTree = "<group>"; };
+		6D4226A2355E1A725118CF10011D004D /* JKOCLibrary.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = JKOCLibrary.podspec; sourceTree = "<group>"; tabWidth = 2; };
+		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		772DCF319FF114250357BE132BE10B28 /* Pods-JKOCLibrary_Tests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-JKOCLibrary_Tests"; path = Pods_JKOCLibrary_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7D9095E8D216B12149B8EDDE6C0D28F2 /* Pods-JKOCLibrary_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-JKOCLibrary_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		7F01132F6BE1BB9DF3361552A3FE9CAD /* Pods-JKOCLibrary_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JKOCLibrary_Example.release.xcconfig"; sourceTree = "<group>"; };
+		8205084B492FEE72EDE29F1B6EBD3D46 /* Pods-JKOCLibrary_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-JKOCLibrary_Tests-Info.plist"; sourceTree = "<group>"; };
+		829CCF56EB4A4D10D0FCBBC7084BD78D /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A00AEDB9F1A202AB4E50F457C5E752D4 /* Pods-JKOCLibrary_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JKOCLibrary_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		A0AB41D4FE43B6F26CF41C90C64AE4E9 /* Pods-JKOCLibrary_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-JKOCLibrary_Tests-dummy.m"; sourceTree = "<group>"; };
+		AA0EBB6C6DB7314BF5B4DAE09DF036DF /* Pods-JKOCLibrary_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-JKOCLibrary_Example-Info.plist"; sourceTree = "<group>"; };
+		B5411E971DDFA1C0BF8B00475120492E /* Pods-JKOCLibrary_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-JKOCLibrary_Example-umbrella.h"; sourceTree = "<group>"; };
+		BE538983E76F1EFF773CA718669FF7BB /* JKOCLibrary.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JKOCLibrary.release.xcconfig; sourceTree = "<group>"; };
+		C165A473E529DCC49B8F334AEA816F8C /* JKOCLibrary */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = JKOCLibrary; path = JKOCLibrary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C5C2D1AE3D0566231DE2A6D55BB188A7 /* JKOCLibrary-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JKOCLibrary-umbrella.h"; sourceTree = "<group>"; };
+		D3B6FA0B92046AFDE51BE69E498FBEB7 /* Pods-JKOCLibrary_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-JKOCLibrary_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		D60DF2A920D6A0D0AC86C93851B439EB /* Pods-JKOCLibrary_Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-JKOCLibrary_Example"; path = Pods_JKOCLibrary_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D6311E31BC185FE602B92E3868735B4E /* Pods-JKOCLibrary_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JKOCLibrary_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		F08E341E111F3D137CF7D0708F0DD384 /* Pods-JKOCLibrary_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-JKOCLibrary_Example.modulemap"; sourceTree = "<group>"; };
+		F1A509763165EC130EB4183991B539C4 /* Pods-JKOCLibrary_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JKOCLibrary_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		F55C72A36D46177474809E412C3E8112 /* Pods-JKOCLibrary_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-JKOCLibrary_Tests-umbrella.h"; sourceTree = "<group>"; };
+		FD3C6CE18A7D167AA32B0F5746082344 /* JKOCLibrary.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JKOCLibrary.debug.xcconfig; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1A5FF9DA1DBFBF1B22C2C373B8582FDF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F95748F31F4B301A915E4789175C7F1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		49E42916768F1019585340EAB65DFCA8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				876AA0F2276C5CF0ECADC3DED6B728A1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9E2C92ABB62813ADBA8830EA3099431A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C01B6F4ABCE75E4CD1BB1BA2F07E1995 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		368C8F485B94048F99BECA4E22AA3AF0 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				261FCD21511DB347379CEA8B240DC77E /* JKOCLibrary.modulemap */,
+				6284902D425829FDC8A6647B91AE8F28 /* JKOCLibrary-dummy.m */,
+				65FD36E498C7A5C9592C40CF8F1F7335 /* JKOCLibrary-Info.plist */,
+				17A591333CE5EF08214B056918DAC182 /* JKOCLibrary-prefix.pch */,
+				C5C2D1AE3D0566231DE2A6D55BB188A7 /* JKOCLibrary-umbrella.h */,
+				FD3C6CE18A7D167AA32B0F5746082344 /* JKOCLibrary.debug.xcconfig */,
+				BE538983E76F1EFF773CA718669FF7BB /* JKOCLibrary.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/JKOCLibrary";
+			sourceTree = "<group>";
+		};
+		3A08DF241D96EECCC435A9B3EADD630D /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B3F0FF09C0683080E503CC5145FA0CCB /* JKOCLibrary */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		4CC77C9E0A0CB569F1D3C3826C064B0E /* Pods-JKOCLibrary_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				273F94865831A5D28672513744E21F36 /* Pods-JKOCLibrary_Tests.modulemap */,
+				5BBD9CC8C6B5560FDB5C789AC6693838 /* Pods-JKOCLibrary_Tests-acknowledgements.markdown */,
+				603A22E47DC7D03CF2CB0189B248232F /* Pods-JKOCLibrary_Tests-acknowledgements.plist */,
+				A0AB41D4FE43B6F26CF41C90C64AE4E9 /* Pods-JKOCLibrary_Tests-dummy.m */,
+				8205084B492FEE72EDE29F1B6EBD3D46 /* Pods-JKOCLibrary_Tests-Info.plist */,
+				F55C72A36D46177474809E412C3E8112 /* Pods-JKOCLibrary_Tests-umbrella.h */,
+				F1A509763165EC130EB4183991B539C4 /* Pods-JKOCLibrary_Tests.debug.xcconfig */,
+				A00AEDB9F1A202AB4E50F457C5E752D4 /* Pods-JKOCLibrary_Tests.release.xcconfig */,
+			);
+			name = "Pods-JKOCLibrary_Tests";
+			path = "Target Support Files/Pods-JKOCLibrary_Tests";
+			sourceTree = "<group>";
+		};
+		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		7F7AFE845312D165B3E0D0BAD7FABA3B /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				BEB2CB26D836CD1305AD60ACBDBDE5D1 /* Pods-JKOCLibrary_Example */,
+				4CC77C9E0A0CB569F1D3C3826C064B0E /* Pods-JKOCLibrary_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		96E31258437D1A4527315EDC50F55685 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C165A473E529DCC49B8F334AEA816F8C /* JKOCLibrary */,
+				D60DF2A920D6A0D0AC86C93851B439EB /* Pods-JKOCLibrary_Example */,
+				772DCF319FF114250357BE132BE10B28 /* Pods-JKOCLibrary_Tests */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B3F0FF09C0683080E503CC5145FA0CCB /* JKOCLibrary */ = {
+			isa = PBXGroup;
+			children = (
+				334A1BD266A969F6F238D911A7B91F4C /* ReplaceMe.m */,
+				F284635D92A63804AEFEAC5E20B70F0E /* Pod */,
+				368C8F485B94048F99BECA4E22AA3AF0 /* Support Files */,
+			);
+			name = JKOCLibrary;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		BEB2CB26D836CD1305AD60ACBDBDE5D1 /* Pods-JKOCLibrary_Example */ = {
+			isa = PBXGroup;
+			children = (
+				F08E341E111F3D137CF7D0708F0DD384 /* Pods-JKOCLibrary_Example.modulemap */,
+				D3B6FA0B92046AFDE51BE69E498FBEB7 /* Pods-JKOCLibrary_Example-acknowledgements.markdown */,
+				7D9095E8D216B12149B8EDDE6C0D28F2 /* Pods-JKOCLibrary_Example-acknowledgements.plist */,
+				6D1FF011FE8DE23EA2ECD39A9F05C0EB /* Pods-JKOCLibrary_Example-dummy.m */,
+				088602658A82D6802CD0EE98B01D45AE /* Pods-JKOCLibrary_Example-frameworks.sh */,
+				AA0EBB6C6DB7314BF5B4DAE09DF036DF /* Pods-JKOCLibrary_Example-Info.plist */,
+				B5411E971DDFA1C0BF8B00475120492E /* Pods-JKOCLibrary_Example-umbrella.h */,
+				D6311E31BC185FE602B92E3868735B4E /* Pods-JKOCLibrary_Example.debug.xcconfig */,
+				7F01132F6BE1BB9DF3361552A3FE9CAD /* Pods-JKOCLibrary_Example.release.xcconfig */,
+			);
+			name = "Pods-JKOCLibrary_Example";
+			path = "Target Support Files/Pods-JKOCLibrary_Example";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				3A08DF241D96EECCC435A9B3EADD630D /* Development Pods */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				96E31258437D1A4527315EDC50F55685 /* Products */,
+				7F7AFE845312D165B3E0D0BAD7FABA3B /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				578452D2E740E91742655AC8F1636D1F /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F284635D92A63804AEFEAC5E20B70F0E /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				6D4226A2355E1A725118CF10011D004D /* JKOCLibrary.podspec */,
+				39EEE654C93FE351D1AA28F13C8F508F /* LICENSE */,
+				829CCF56EB4A4D10D0FCBBC7084BD78D /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		1054500F7A6FCF2C2DBDE35D66BBC794 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				623BEA2D123D9ABA2D38EFAD83B501B4 /* Pods-JKOCLibrary_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		310A494AEE70C92D1FE9FB95FDBE611E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECFA46457DA2D66F7092398C6809FBC2 /* JKOCLibrary-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB3C570ABABE38E654AEA59C8DEE809C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				470CCF2F5D4E0CFC5A946B9D53692B3F /* Pods-JKOCLibrary_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		16BAF5EFA25CE66F83377B8005EFFCE7 /* Pods-JKOCLibrary_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 230A63E207A6DAC9C47749265BBC2B50 /* Build configuration list for PBXNativeTarget "Pods-JKOCLibrary_Tests" */;
+			buildPhases = (
+				AB3C570ABABE38E654AEA59C8DEE809C /* Headers */,
+				F762C69013014AC669129CA988612673 /* Sources */,
+				1A5FF9DA1DBFBF1B22C2C373B8582FDF /* Frameworks */,
+				1C97B30B0CF85915ACB64B65C5851049 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				14F925CF505E6AC82ECBE0D3500BBA0E /* PBXTargetDependency */,
+			);
+			name = "Pods-JKOCLibrary_Tests";
+			productName = Pods_JKOCLibrary_Tests;
+			productReference = 772DCF319FF114250357BE132BE10B28 /* Pods-JKOCLibrary_Tests */;
+			productType = "com.apple.product-type.framework";
+		};
+		556C2957B1B9E81ACF36827564884942 /* Pods-JKOCLibrary_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EBA5A5FCD0A0408A68015577F4F50485 /* Build configuration list for PBXNativeTarget "Pods-JKOCLibrary_Example" */;
+			buildPhases = (
+				1054500F7A6FCF2C2DBDE35D66BBC794 /* Headers */,
+				10B7067BA6FA124C9B5551D808EE75D4 /* Sources */,
+				49E42916768F1019585340EAB65DFCA8 /* Frameworks */,
+				8BCCF0A5663EDBEF27CD96E07102AA6D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E8317D00DE646DE90A13450678B49877 /* PBXTargetDependency */,
+			);
+			name = "Pods-JKOCLibrary_Example";
+			productName = Pods_JKOCLibrary_Example;
+			productReference = D60DF2A920D6A0D0AC86C93851B439EB /* Pods-JKOCLibrary_Example */;
+			productType = "com.apple.product-type.framework";
+		};
+		8943F3A611F54ADB0A43BF9E39D68BFC /* JKOCLibrary */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8342729801FF5CD5C039B1512D75784D /* Build configuration list for PBXNativeTarget "JKOCLibrary" */;
+			buildPhases = (
+				310A494AEE70C92D1FE9FB95FDBE611E /* Headers */,
+				B889EB1429BA7A4DE9DB75AEED55428D /* Sources */,
+				9E2C92ABB62813ADBA8830EA3099431A /* Frameworks */,
+				E88F30BA8629D79B813151EF6C44A45A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JKOCLibrary;
+			productName = JKOCLibrary;
+			productReference = C165A473E529DCC49B8F334AEA816F8C /* JKOCLibrary */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 96E31258437D1A4527315EDC50F55685 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8943F3A611F54ADB0A43BF9E39D68BFC /* JKOCLibrary */,
+				556C2957B1B9E81ACF36827564884942 /* Pods-JKOCLibrary_Example */,
+				16BAF5EFA25CE66F83377B8005EFFCE7 /* Pods-JKOCLibrary_Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1C97B30B0CF85915ACB64B65C5851049 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8BCCF0A5663EDBEF27CD96E07102AA6D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E88F30BA8629D79B813151EF6C44A45A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		10B7067BA6FA124C9B5551D808EE75D4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3F99FAF60F7FC228B35A85F503490B7 /* Pods-JKOCLibrary_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B889EB1429BA7A4DE9DB75AEED55428D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C8C1A4576D939126AE9D470F4758A824 /* JKOCLibrary-dummy.m in Sources */,
+				C69F8A584917C192D2F8475BE8B43283 /* ReplaceMe.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F762C69013014AC669129CA988612673 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C2D9E00F57CD4109781DD833FE719E4 /* Pods-JKOCLibrary_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		14F925CF505E6AC82ECBE0D3500BBA0E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-JKOCLibrary_Example";
+			target = 556C2957B1B9E81ACF36827564884942 /* Pods-JKOCLibrary_Example */;
+			targetProxy = 8D6B00C2D958B37C81F331F043122F7A /* PBXContainerItemProxy */;
+		};
+		E8317D00DE646DE90A13450678B49877 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = JKOCLibrary;
+			target = 8943F3A611F54ADB0A43BF9E39D68BFC /* JKOCLibrary */;
+			targetProxy = 1AF5EAF6EDB8889D6827185C9FE91312 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		16D34F6AF3E4825327B92398D1F69C6C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F1A509763165EC130EB4183991B539C4 /* Pods-JKOCLibrary_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-JKOCLibrary_Tests/Pods-JKOCLibrary_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-JKOCLibrary_Tests/Pods-JKOCLibrary_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		24B2A63661F00CBA1CB438F023EB49C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A00AEDB9F1A202AB4E50F457C5E752D4 /* Pods-JKOCLibrary_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-JKOCLibrary_Tests/Pods-JKOCLibrary_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-JKOCLibrary_Tests/Pods-JKOCLibrary_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		7EE7A78859F657F6BEFC651185B43192 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		8D11B12934B074131046B6702DED1E0E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7F01132F6BE1BB9DF3361552A3FE9CAD /* Pods-JKOCLibrary_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-JKOCLibrary_Example/Pods-JKOCLibrary_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-JKOCLibrary_Example/Pods-JKOCLibrary_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D299434AB35E7FD6F7921C8EF24742FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		D4233F2D15B08F7645A9CFD96362CC12 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D6311E31BC185FE602B92E3868735B4E /* Pods-JKOCLibrary_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-JKOCLibrary_Example/Pods-JKOCLibrary_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-JKOCLibrary_Example/Pods-JKOCLibrary_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D5EBE3BD371F47C51372258EBC0CC14A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BE538983E76F1EFF773CA718669FF7BB /* JKOCLibrary.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/JKOCLibrary/JKOCLibrary-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/JKOCLibrary/JKOCLibrary-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/JKOCLibrary/JKOCLibrary.modulemap";
+				PRODUCT_MODULE_NAME = JKOCLibrary;
+				PRODUCT_NAME = JKOCLibrary;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E184BFBA9767447CE3251FC96E857F2A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FD3C6CE18A7D167AA32B0F5746082344 /* JKOCLibrary.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/JKOCLibrary/JKOCLibrary-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/JKOCLibrary/JKOCLibrary-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/JKOCLibrary/JKOCLibrary.modulemap";
+				PRODUCT_MODULE_NAME = JKOCLibrary;
+				PRODUCT_NAME = JKOCLibrary;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		230A63E207A6DAC9C47749265BBC2B50 /* Build configuration list for PBXNativeTarget "Pods-JKOCLibrary_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				16D34F6AF3E4825327B92398D1F69C6C /* Debug */,
+				24B2A63661F00CBA1CB438F023EB49C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D299434AB35E7FD6F7921C8EF24742FF /* Debug */,
+				7EE7A78859F657F6BEFC651185B43192 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8342729801FF5CD5C039B1512D75784D /* Build configuration list for PBXNativeTarget "JKOCLibrary" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E184BFBA9767447CE3251FC96E857F2A /* Debug */,
+				D5EBE3BD371F47C51372258EBC0CC14A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EBA5A5FCD0A0408A68015577F4F50485 /* Build configuration list for PBXNativeTarget "Pods-JKOCLibrary_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D4233F2D15B08F7645A9CFD96362CC12 /* Debug */,
+				8D11B12934B074131046B6702DED1E0E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

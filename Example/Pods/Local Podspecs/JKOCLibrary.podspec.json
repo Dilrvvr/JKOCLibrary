@@ -1,0 +1,22 @@
+{
+  "name": "JKOCLibrary",
+  "version": "0.1.0",
+  "summary": "A short description of JKOCLibrary.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/albert/JKOCLibrary",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "albert": "jkdev123cool@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/albert/JKOCLibrary.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "10.0"
+  },
+  "source_files": "JKOCLibrary/Classes/**/*"
+}

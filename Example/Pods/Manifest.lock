@@ -1,0 +1,16 @@
+PODS:
+  - JKOCLibrary (0.1.0)
+
+DEPENDENCIES:
+  - JKOCLibrary (from `../`)
+
+EXTERNAL SOURCES:
+  JKOCLibrary:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  JKOCLibrary: 23489561e44ed4434c9fd2c65310784d1f1dda5f
+
+PODFILE CHECKSUM: a51e470c1c29be4d5de1706d813f09e7f63f83fb
+
+COCOAPODS: 1.11.3

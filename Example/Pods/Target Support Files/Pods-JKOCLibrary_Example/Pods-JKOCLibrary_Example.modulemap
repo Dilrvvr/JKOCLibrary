@@ -1,0 +1,6 @@
+framework module Pods_JKOCLibrary_Example {
+  umbrella header "Pods-JKOCLibrary_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

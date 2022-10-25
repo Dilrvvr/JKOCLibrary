@@ -1,0 +1,6 @@
+framework module JKOCLibrary {
+  umbrella header "JKOCLibrary-umbrella.h"
+
+  export *
+  module * { export * }
+}
