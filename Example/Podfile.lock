@@ -1,5 +1,7 @@
 PODS:
-  - JKOCLibrary (0.1.0)
+  - JKOCLibrary (0.0.1):
+    - JKOCLibrary/Core (= 0.0.1)
+  - JKOCLibrary/Core (0.0.1)
 
 DEPENDENCIES:
   - JKOCLibrary (from `../`)
@@ -9,7 +11,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  JKOCLibrary: 23489561e44ed4434c9fd2c65310784d1f1dda5f
+  JKOCLibrary: 7d8811d6780ded32d127e0bf2f6e9aaf9682e92a
 
 PODFILE CHECKSUM: a51e470c1c29be4d5de1706d813f09e7f63f83fb
 

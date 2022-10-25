@@ -10,6 +10,8 @@
 #endif
 #endif
 
+#import "JKOCLibrary.h"
+#import "JKOCUtility.h"
 
 FOUNDATION_EXPORT double JKOCLibraryVersionNumber;
 FOUNDATION_EXPORT const unsigned char JKOCLibraryVersionString[];
