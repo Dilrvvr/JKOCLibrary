@@ -8,5 +8,6 @@
 #ifndef JKOCLibrary_h
 #define JKOCLibrary_h
 
+#import "JKOCUtility.h"
 
 #endif /* JKOCLibrary_h */
