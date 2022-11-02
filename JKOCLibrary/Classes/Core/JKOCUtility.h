@@ -101,7 +101,7 @@ typedef UIImage * (^JKOCImageFailedBlock)(NSString *imageName);
 /// 底部安全区域高度
 @property (class, nonatomic, readonly) CGFloat bottomSafeAreaInset;
 
-/// TabBar高度
+/// tabBar高度
 @property (class, nonatomic, readonly) CGFloat tabBarHeight;
 
 /// 分隔线粗细

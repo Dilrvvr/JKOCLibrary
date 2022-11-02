@@ -166,10 +166,22 @@ static JKOCImageFailedBlock sw_oc_resourceImageFailedHandler;
     return [self safeAreaInset].bottom;
 }
 
-/// TabBar高度
+/// tabBar高度
 + (CGFloat)tabBarHeight {
     
-    return [self bottomSafeAreaInset] + 49.0;
+    CGFloat bottomInset = [self bottomSafeAreaInset];
+    
+    if ([self isDeviceiPad]) { // iPad
+        
+        return bottomInset + 49.0;
+    }
+    
+    if ([self isLandscape]) { // 横屏
+        
+        return CGRectGetHeight([UIScreen mainScreen].bounds) > 400.0 ? 49.0 : 32.0;
+    }
+    
+    return bottomInset + 49.0;
 }
 
 /// 分隔线粗细
