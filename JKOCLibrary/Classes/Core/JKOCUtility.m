@@ -171,17 +171,19 @@ static JKOCImageFailedBlock sw_oc_resourceImageFailedHandler;
     
     CGFloat bottomInset = [self bottomSafeAreaInset];
     
+    CGFloat barHeight = 49.0;
+    
     if ([self isDeviceiPad]) { // iPad
         
-        return bottomInset + 49.0;
+        return bottomInset + barHeight;
     }
     
     if ([self isLandscape]) { // 横屏
         
-        return CGRectGetHeight([UIScreen mainScreen].bounds) > 400.0 ? 49.0 : 32.0;
+        barHeight = CGRectGetHeight([UIScreen mainScreen].bounds) > 400.0 ? 49.0 : 32.0;
     }
     
-    return bottomInset + 49.0;
+    return bottomInset + barHeight;
 }
 
 /// 分隔线粗细
