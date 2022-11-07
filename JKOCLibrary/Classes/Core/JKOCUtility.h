@@ -19,6 +19,11 @@ typedef UIImage * (^JKOCImageFailedBlock)(NSString *imageName);
 #define JKScreenWidth [UIScreen mainScreen].bounds.size.width
 #define JKScreenHeight [UIScreen mainScreen].bounds.size.height
 
+#define JKPortraitScreenBounds [JKOCUtility portraitScreenBounds]
+#define JKPortraitScreenWidth [JKOCUtility portraitScreenWidth]
+#define JKPortraitScreenHeight [JKOCUtility portraitScreenHeight]
+
+#define JKisPortrait [JKOCUtility isPortrait]
 #define JKisLandscape [JKOCUtility isLandscape]
 
 #define JKisDeviceiPhone [JKOCUtility isDeviceiPhone]
@@ -48,15 +53,15 @@ typedef UIImage * (^JKOCImageFailedBlock)(NSString *imageName);
 #define JKFitZoomScale [JKOCUtility zoomLargeScale]//[JKOCUtility zoomScale]
 //#define JKFitZoomLargeScale [JKOCUtility zoomLargeScale]
 
-#define JKFitFloat(value) ((value) * SWFitZoomScale)
-#define JKFitFontNormal(value) [UIFont systemFontOfSize:((value) * SWFitZoomScale)]
-#define JKFitFontMedium(value) [UIFont systemFontOfSize:((value) * SWFitZoomScale) weight:UIFontWeightMedium]
-#define JKFitFontBold(value) [UIFont boldSystemFontOfSize:((value) * SWFitZoomScale)]
+#define JKFitFloat(value) ((value) * JKFitZoomScale)
+#define JKFitFontNormal(value) [UIFont systemFontOfSize:((value) * JKFitZoomScale)]
+#define JKFitFontMedium(value) [UIFont systemFontOfSize:((value) * JKFitZoomScale) weight:UIFontWeightMedium]
+#define JKFitFontBold(value) [UIFont boldSystemFontOfSize:((value) * JKFitZoomScale)]
 
-//#define JKFitFloatZoomLarge(value) ((value) * SWFitZoomLargeScale)
-//#define JKFitFontNormalZoomLarge(value) [UIFont systemFontOfSize:((value) * SWFitZoomLargeScale)]
-//#define JKFitFontMediumZoomLarge(value) [UIFont systemFontOfSize:((value) * SWFitZoomLargeScale) weight:UIFontWeightMedium]
-//#define JKFitFontBoldZoomLarge(value) [UIFont boldSystemFontOfSize:((value) * SWFitZoomLargeScale)]
+//#define JKFitFloatZoomLarge(value) ((value) * JKFitZoomLargeScale)
+//#define JKFitFontNormalZoomLarge(value) [UIFont systemFontOfSize:((value) * JKFitZoomLargeScale)]
+//#define JKFitFontMediumZoomLarge(value) [UIFont systemFontOfSize:((value) * JKFitZoomLargeScale) weight:UIFontWeightMedium]
+//#define JKFitFontBoldZoomLarge(value) [UIFont boldSystemFontOfSize:((value) * JKFitZoomLargeScale)]
 
 #define JKRGBColor(r,g,b) [JKOCUtility colorWithRed:(r) green:(g) blue:(b) alpha:1.0]
 #define JKRGBColorAlpha(r,g,b,a) [JKOCUtility colorWithRed:(r) green:(g) blue:(b) alpha:(a)]
@@ -73,6 +78,18 @@ typedef UIImage * (^JKOCImageFailedBlock)(NSString *imageName);
 
 /// 当前签名的开发者ID
 @property (class, nonatomic, readonly) NSString *developmentTeamId;
+
+/// 竖屏的屏幕宽度
+@property (class, nonatomic, readonly) CGFloat portraitScreenWidth;
+
+/// 竖屏的屏幕高度
+@property (class, nonatomic, readonly) CGFloat portraitScreenHeight;
+
+/// 竖屏的屏幕bounds
+@property (class, nonatomic, readonly) CGRect portraitScreenBounds;
+
+/// 当前是否竖屏
+@property (class, nonatomic, readonly) BOOL isPortrait;
 
 /// 当前是否横屏
 @property (class, nonatomic, readonly) BOOL isLandscape;

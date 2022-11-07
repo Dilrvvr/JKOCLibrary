@@ -57,6 +57,30 @@ static JKOCImageFailedBlock sw_oc_resourceImageFailedHandler;
     return buPreStr;
 }
 
+/// 竖屏的屏幕宽度
++ (CGFloat)portraitScreenWidth {
+    
+    return MIN([UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height);
+}
+
+/// 竖屏的屏幕高度
++ (CGFloat)portraitScreenHeight {
+    
+    return MAX([UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height);
+}
+
+/// 竖屏的屏幕bounds
++ (CGRect)portraitScreenBounds {
+    
+    return CGRectMake(0.0, 0.0, [self portraitScreenWidth], [self portraitScreenHeight]);
+}
+
+/// 当前是否竖屏
++ (BOOL)isPortrait {
+    
+    return [UIScreen mainScreen].bounds.size.width <= [UIScreen mainScreen].bounds.size.height;
+}
+
 /// 当前是否横屏
 + (BOOL)isLandscape {
     
@@ -154,7 +178,7 @@ static JKOCImageFailedBlock sw_oc_resourceImageFailedHandler;
     
     if ([self isLandscape]) {
         
-        return CGRectGetHeight([UIScreen mainScreen].bounds) > 400.0 ? 44.0 : 32.0;
+        return MIN(JKScreenWidth, JKScreenHeight) > 400.0 ? 44.0 : 32.0;
     }
     
     return [self statusBarHeight] + 44.0;
@@ -169,21 +193,20 @@ static JKOCImageFailedBlock sw_oc_resourceImageFailedHandler;
 /// tabBar高度
 + (CGFloat)tabBarHeight {
     
-    CGFloat bottomInset = [self bottomSafeAreaInset];
-    
-    CGFloat barHeight = 49.0;
-    
-    if ([self isDeviceiPad]) { // iPad
+    if (JKisPortrait) { // 竖屏
         
-        return bottomInset + barHeight;
+        return JKBottomSafeAreaInset + 49.0;
     }
     
-    if ([self isLandscape]) { // 横屏
+    // 横屏
+    
+    if (JKisDeviceiPad ||
+        MIN(JKScreenWidth, JKScreenHeight) > 400.0) { // iPad和大屏iPhone
         
-        barHeight = CGRectGetHeight([UIScreen mainScreen].bounds) > 400.0 ? 49.0 : 32.0;
+        return JKBottomSafeAreaInset + 49.0;
     }
     
-    return bottomInset + barHeight;
+    return JKBottomSafeAreaInset + 32.0;
 }
 
 /// 分隔线粗细
