@@ -705,6 +705,8 @@ static JKOCImageFailedBlock sw_oc_resourceImageFailedHandler;
         @"iPad12,1" : @"iPad (9th generation)",
         @"iPad12,2" : @"iPad (9th generation)",
         
+        @"iPad13,18" : @"iPad (10th generation)",
+        @"iPad13,19" : @"iPad (10th generation)",
         
         // iPad Air
         
@@ -764,6 +766,12 @@ static JKOCImageFailedBlock sw_oc_resourceImageFailedHandler;
         @"iPad13,9" : @"iPad Pro (12.9-inch) (5th generation)",
         @"iPad13,10" : @"iPad Pro (12.9-inch) (5th generation)",
         @"iPad13,11" : @"iPad Pro (12.9-inch) (5th generation)",
+        
+        @"iPad14,3" : @"iPad Pro (11-inch) (4th generation)",
+        @"iPad14,4" : @"iPad Pro (11-inch) (4th generation)",
+        
+        @"iPad14,5" : @"iPad Pro (12.9-inch) (6th generation)",
+        @"iPad14,6" : @"iPad Pro (12.9-inch) (6th generation)",
         
         
         // iPad mini
