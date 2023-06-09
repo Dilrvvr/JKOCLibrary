@@ -78,11 +78,33 @@ static JKOCImageFailedBlock sw_oc_resourceImageFailedHandler;
 /// 当前是否竖屏
 + (BOOL)isPortrait {
     
-    return [UIScreen mainScreen].bounds.size.width <= [UIScreen mainScreen].bounds.size.height;
+    if (@available(iOS 16.0, *)) {
+        
+        UIWindowScene *windowScene = [self currentWindowScene];
+        
+        if (windowScene &&
+            [windowScene isKindOfClass:[UIWindowScene class]]) {
+            
+            return UIInterfaceOrientationIsPortrait(windowScene.interfaceOrientation);
+        }
+    }
+    
+    return [UIScreen mainScreen].bounds.size.height >= [UIScreen mainScreen].bounds.size.width;
 }
 
 /// 当前是否横屏
 + (BOOL)isLandscape {
+    
+    if (@available(iOS 16.0, *)) {
+        
+        UIWindowScene *windowScene = [self currentWindowScene];
+        
+        if (windowScene &&
+            [windowScene isKindOfClass:[UIWindowScene class]]) {
+            
+            return UIInterfaceOrientationIsLandscape(windowScene.interfaceOrientation);
+        }
+    }
     
     return [UIScreen mainScreen].bounds.size.width > [UIScreen mainScreen].bounds.size.height;
 }
@@ -134,11 +156,117 @@ static JKOCImageFailedBlock sw_oc_resourceImageFailedHandler;
     return isDeviceX_;
 }
 
+/// 当前的windowScene
++ (UIWindowScene *)currentWindowScene API_AVAILABLE(ios(13.0)) {
+    
+    NSSet *connectedScenes = UIApplication.sharedApplication.connectedScenes;
+    
+    if (connectedScenes.count < 1) { return nil; }
+    
+    if (connectedScenes.count == 1) {
+        
+        UIWindowScene *windowScene = connectedScenes.anyObject;
+        
+        if ([windowScene isKindOfClass:[UIWindowScene class]]) {
+            
+            return windowScene;
+        }
+        
+        return nil;
+    }
+    
+    for (UIWindowScene *windowScene in connectedScenes) {
+        
+        if (![windowScene isKindOfClass:[UIWindowScene class]]) { continue; }
+        
+        if (windowScene.activationState == UISceneActivationStateForegroundActive) {
+            
+            return windowScene;
+        }
+    }
+    
+    return nil;
+}
+
+/// 当前windowScene的window
++ (UIWindow *)currentSceneWindow {
+    
+    if (@available(iOS 13.0, *)) {
+        
+        UIWindowScene *windowScene = [self currentWindowScene];
+        
+        if (!windowScene ||
+            ![windowScene isKindOfClass:[UIWindowScene class]]) {
+            
+            return nil;
+        }
+        
+        id delegate = windowScene.delegate;
+        
+        if ([delegate conformsToProtocol:@protocol(UIWindowSceneDelegate)] &&
+            [delegate respondsToSelector:@selector(window)]) {
+            
+            return [delegate window];
+        }
+        
+        if (@available(iOS 15.0, *)) {
+            
+            if (windowScene.keyWindow != nil) {
+                
+                return windowScene.keyWindow;
+            }
+        }
+        
+        if (windowScene.windows.count < 1) {
+            
+            return nil;
+        }
+        
+        if (windowScene.windows.count == 1) {
+            
+            return windowScene.windows.firstObject;
+        }
+        
+        for (UIWindow *window in windowScene.windows) {
+            
+            if (window.isHidden) { continue; }
+            
+            if (window.isKeyWindow) {
+                
+                return window;
+            }
+            
+            return window;
+        }
+    }
+    
+    return nil;
+}
+
 /// keyWindow
 + (UIWindow *)keyWindow {
     
     // TODO: - JKTODO 目前只有单window模式，暂不适配多window模式
-    return [UIApplication sharedApplication].delegate.window;
+    //return [UIApplication sharedApplication].delegate.window;
+    
+    if (defaultWindow_ != nil &&
+        [defaultWindow_ isKindOfClass:[UIWindow class]]) {
+        
+        return defaultWindow_;
+    }
+    
+    UIWindow *keyWindow = nil;
+    
+    if ([[UIApplication sharedApplication].delegate respondsToSelector:@selector(window)]) {
+        
+        keyWindow = [[UIApplication sharedApplication].delegate window];
+        
+    } else {
+        
+        keyWindow = [self currentSceneWindow];
+    }
+    
+    return keyWindow;
 }
 
 /// 安全区域 insets
@@ -283,6 +411,14 @@ static JKOCImageFailedBlock sw_oc_resourceImageFailedHandler;
     });
     
     return zoomLargeScale_;
+}
+
+static __weak UIWindow *defaultWindow_ = nil;
+
+/// 设置默认window，设置后若有值则keyWindow返回此值
++ (void)makeDefaultWindow:(UIWindow *)window {
+    
+    defaultWindow_ = window;
 }
 
 /// 让手机振动一下

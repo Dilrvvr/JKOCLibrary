@@ -31,6 +31,8 @@ typedef UIImage * (^JKOCImageFailedBlock)(NSString *imageName);
 
 #define JKisDeviceX [JKOCUtility isDeviceX]
 
+#define JKCurrentWindowScene [JKOCUtility currentWindowScene]
+#define JKCurrentSceneWindow [JKOCUtility currentSceneWindow]
 #define JKKeyWindow [JKOCUtility keyWindow]
 #define JKSafeAreaInsets [JKOCUtility safeAreaInset]
 
@@ -103,6 +105,12 @@ typedef UIImage * (^JKOCImageFailedBlock)(NSString *imageName);
 /// 是否iPhone X设备
 @property (class, nonatomic, readonly) BOOL isDeviceX;
 
+/// 当前的windowScene
+@property (class, nonatomic, readonly) UIWindowScene *currentWindowScene API_AVAILABLE(ios(13.0));
+
+/// 当前windowScene的window
+@property (class, nonatomic, readonly) UIWindow *currentSceneWindow;
+
 /// keyWindow
 @property (class, nonatomic, readonly) UIWindow *keyWindow;
 
@@ -144,6 +152,9 @@ typedef UIImage * (^JKOCImageFailedBlock)(NSString *imageName);
 
 /// 屏幕适配放大比例 小屏幕缩放，大屏幕 放大
 @property (class, nonatomic, readonly) CGFloat zoomLargeScale;
+
+/// 设置默认window，设置后若有值则keyWindow返回此值
++ (void)makeDefaultWindow:(UIWindow *)window;
 
 /// 让手机振动一下
 + (void)vibrateDevice;
