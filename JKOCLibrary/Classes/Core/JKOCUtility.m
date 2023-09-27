@@ -686,7 +686,7 @@ static __weak UIWindow *defaultWindow_ = nil;
             
         } else {
             
-            modelName = @"Unknown";
+            modelName = [NSString stringWithFormat:@"unknown(%@)", [self deviceIdentifier]];
         }
         
         deviceModelName_ = modelName;
@@ -790,6 +790,11 @@ static __weak UIWindow *defaultWindow_ = nil;
         @"iPhone15,2" : @"iPhone 14 Pro",
         @"iPhone15,3" : @"iPhone 14 Pro Max",
         
+        @"iPhone15,4" : @"iPhone 15",
+        @"iPhone15,5" : @"iPhone 15 Plus",
+        @"iPhone16,1" : @"iPhone 15 Pro",
+        @"iPhone16,2" : @"iPhone 15 Pro Max",
+        
         
         // iPod touch
         
@@ -843,6 +848,31 @@ static __weak UIWindow *defaultWindow_ = nil;
         
         @"iPad13,18" : @"iPad (10th generation)",
         @"iPad13,19" : @"iPad (10th generation)",
+        
+        
+        // iPad mini
+        
+        @"iPad2,5" : @"iPad mini",
+        @"iPad2,6" : @"iPad mini",
+        @"iPad2,7" : @"iPad mini",
+        
+        @"iPad4,4" : @"iPad mini 2",
+        @"iPad4,5" : @"iPad mini 2",
+        @"iPad4,6" : @"iPad mini 2",
+        
+        @"iPad4,7" : @"iPad mini 3",
+        @"iPad4,8" : @"iPad mini 3",
+        @"iPad4,9" : @"iPad mini 3",
+        
+        @"iPad5,1" : @"iPad mini 4",
+        @"iPad5,2" : @"iPad mini 4",
+        
+        @"iPad11,1" : @"iPad mini (5th generation)",
+        @"iPad11,2" : @"iPad mini (5th generation)",
+        
+        @"iPad14,1" : @"iPad mini (6th generation)",
+        @"iPad14,2" : @"iPad mini (6th generation)",
+        
         
         // iPad Air
         
@@ -909,46 +939,33 @@ static __weak UIWindow *defaultWindow_ = nil;
         @"iPad14,5" : @"iPad Pro (12.9-inch) (6th generation)",
         @"iPad14,6" : @"iPad Pro (12.9-inch) (6th generation)",
         
+        @"iPad14,3-A" : @"iPad Pro (11-inch) (4th generation)",
+        @"iPad14,3-B" : @"iPad Pro (11-inch) (4th generation)",
+        @"iPad14,4-A" : @"iPad Pro (11-inch) (4th generation)",
+        @"iPad14,4-B" : @"iPad Pro (11-inch) (4th generation)",
         
-        // iPad mini
-        
-        @"iPad2,5" : @"iPad mini",
-        @"iPad2,6" : @"iPad mini",
-        @"iPad2,7" : @"iPad mini",
-        
-        @"iPad4,4" : @"iPad mini 2",
-        @"iPad4,5" : @"iPad mini 2",
-        @"iPad4,6" : @"iPad mini 2",
-        
-        @"iPad4,7" : @"iPad mini 3",
-        @"iPad4,8" : @"iPad mini 3",
-        @"iPad4,9" : @"iPad mini 3",
-        
-        @"iPad5,1" : @"iPad mini 4",
-        @"iPad5,2" : @"iPad mini 4",
-        
-        @"iPad11,1" : @"iPad mini (5th generation)",
-        @"iPad11,2" : @"iPad mini (5th generation)",
-        
-        @"iPad14,1" : @"iPad mini (6th generation)",
-        @"iPad14,2" : @"iPad mini (6th generation)",
+        @"iPad14,5-A" : @"iPad Pro (12.9-inch) (6th generation)",
+        @"iPad14,5-B" : @"iPad Pro (12.9-inch) (6th generation)",
+        @"iPad14,6-A" : @"iPad Pro (12.9-inch) (6th generation)",
+        @"iPad14,6-B" : @"iPad Pro (12.9-inch) (6th generation)",
         
         
         // Apple Watch
         
-        @"Watch1,1" : @"Apple Watch (1st generation)",
-        @"Watch1,2" : @"Apple Watch (1st generation)",
+        @"Watch1,1" : @"Apple Watch (1st generation) 38mm",
+        @"Watch1,2" : @"Apple Watch (1st generation) 42mm",
         
-        @"Watch2,6" : @"Apple Watch Series 1",
-        @"Watch2,7" : @"Apple Watch Series 1",
+        @"Watch2,6" : @"Apple Watch Series 1 38mm",
+        @"Watch2,7" : @"Apple Watch Series 1 42mm",
         
-        @"Watch2,3" : @"Apple Watch Series 2",
-        @"Watch2,4" : @"Apple Watch Series 2",
+        @"Watch2,3" : @"Apple Watch Series 2 38mm",
+        @"Watch2,4" : @"Apple Watch Series 2 42mm",
         
-        @"Watch3,1" : @"Apple Watch Series 3",
-        @"Watch3,2" : @"Apple Watch Series 3",
-        @"Watch3,3" : @"Apple Watch Series 3",
-        @"Watch3,4" : @"Apple Watch Series 3",
+        @"Watch3,1" : @"Apple Watch Series 3 (GPS + Cellular) 38mm",
+        @"Watch3,2" : @"Apple Watch Series 3 (GPS + Cellular) 42mm",
+        
+        @"Watch3,3" : @"Apple Watch Series 3 (GPS) 38mm",
+        @"Watch3,4" : @"Apple Watch Series 3 (GPS) 42mm",
         
         @"Watch4,1" : @"Apple Watch Series 4",
         @"Watch4,2" : @"Apple Watch Series 4",
@@ -960,20 +977,39 @@ static __weak UIWindow *defaultWindow_ = nil;
         @"Watch5,3" : @"Apple Watch Series 5",
         @"Watch5,4" : @"Apple Watch Series 5",
         
-        @"Watch5,9" : @"Apple Watch SE",
-        @"Watch5,10" : @"Apple Watch SE",
-        @"Watch5,11" : @"Apple Watch SE",
-        @"Watch5,12" : @"Apple Watch SE",
+        @"Watch5,9" : @"Apple Watch SE (GPS)",
+        @"Watch5,10" : @"Apple Watch SE (GPS)",
+        @"Watch5,11" : @"Apple Watch SE (GPS + Cellular)",
+        @"Watch5,12" : @"Apple Watch SE (GPS + Cellular)",
         
-        @"Watch6,1" : @"Apple Watch Series 6",
-        @"Watch6,2" : @"Apple Watch Series 6",
-        @"Watch6,3" : @"Apple Watch Series 6",
-        @"Watch6,4" : @"Apple Watch Series 6",
+        @"Watch6,1" : @"Apple Watch Series 6 (GPS)",
+        @"Watch6,2" : @"Apple Watch Series 6 (GPS)",
+        @"Watch6,3" : @"Apple Watch Series 6 (GPS + Cellular)",
+        @"Watch6,4" : @"Apple Watch Series 6 (GPS + Cellular)",
         
-        @"Watch6,6" : @"Apple Watch Series 7",
-        @"Watch6,7" : @"Apple Watch Series 7",
-        @"Watch6,8" : @"Apple Watch Series 7",
-        @"Watch6,9" : @"Apple Watch Series 7",
+        @"Watch6,6" : @"Apple Watch Series 7 (GPS)",
+        @"Watch6,7" : @"Apple Watch Series 7 (GPS)",
+        @"Watch6,8" : @"Apple Watch Series 7 (GPS + Cellular)",
+        @"Watch6,9" : @"Apple Watch Series 7 (GPS + Cellular)",
+        
+        @"Watch6,10" : @"Apple Watch SE (GPS)",
+        @"Watch6,11" : @"Apple Watch SE (GPS)",
+        @"Watch6,12" : @"Apple Watch SE (GPS + Cellular)",
+        @"Watch6,13" : @"Apple Watch SE (GPS + Cellular)",
+        
+        @"Watch6,14" : @"Apple Watch Series 8 (GPS)",
+        @"Watch6,15" : @"Apple Watch Series 8 (GPS)",
+        @"Watch6,16" : @"Apple Watch Series 8 (GPS + Cellular)",
+        @"Watch6,17" : @"Apple Watch Series 8 (GPS + Cellular)",
+        
+        @"Watch6,18" : @"Apple Watch Ultra",
+        
+        @"Watch7,1" : @"Apple Watch Series 9 (GPS)",
+        @"Watch7,2" : @"Apple Watch Series 9 (GPS)",
+        @"Watch7,3" : @"Apple Watch Series 9 (GPS + Cellular)",
+        @"Watch7,4" : @"Apple Watch Series 9 (GPS + Cellular)",
+        
+        @"Watch7,5" : @"Apple Watch Ultra 2",
         
         
         // Apple TV
@@ -989,6 +1025,7 @@ static __weak UIWindow *defaultWindow_ = nil;
         
         @"AppleTV6,2" : @"Apple TV 4K",
         @"AppleTV11,1" : @"Apple TV 4K (2nd generation)",
+        @"AppleTV14,1" : @"Apple TV 4K (3rd generation)",
         
         
         // Simulator
